@@ -30,6 +30,13 @@ public class CalculadoraService {
        return resultado;
    }
 
+   public double multiplicar(double num1, double num2) {
+       double resultado = num1 * num2;
+       salvarResultado(num1, num2, "*", resultado);
+
+       return resultado;
+   }
+
    public void salvarResultado(double num1, double num2, String operacao, double resultado){
        Calculadora calc = new Calculadora();
 

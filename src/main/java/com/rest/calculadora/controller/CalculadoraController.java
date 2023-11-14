@@ -22,4 +22,9 @@ public class CalculadoraController {
     public double subtrair(@RequestParam double num1, @RequestParam double num2) {
         return service.subtrair(num1, num2);
     }
+
+    @PostMapping("/multiplicar")
+    public double multiplicar(@RequestParam double num1, @RequestParam double num2) {
+        return service.multiplicar(num1, num2);
+    }
 }
