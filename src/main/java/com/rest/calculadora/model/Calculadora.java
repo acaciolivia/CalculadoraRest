@@ -1,5 +1,6 @@
 package com.rest.calculadora.model;
 
+import com.rest.calculadora.enums.TipoOperacao;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -24,7 +25,7 @@ public class Calculadora {
     private double num2;
 
     @Column(name ="operacao")
-    private String operacao;
+    private TipoOperacao operacao;
 
     @Column(name = "resultado")
     private double resultado;
