@@ -48,7 +48,11 @@ public class CalculadoraService {
        return resultado;
    }
 
-   public void salvarResultado(double num1, double num2, TipoOperacao operacao, double resultado){
+   public List<Calculadora> findAll() {
+       return repository.findAll();
+   }
+
+   private void salvarResultado(double num1, double num2, TipoOperacao operacao, double resultado){
        Calculadora calc = new Calculadora();
 
        calc.setNum1(num1);

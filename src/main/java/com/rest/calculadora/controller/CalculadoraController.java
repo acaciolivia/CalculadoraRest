@@ -1,6 +1,8 @@
 package com.rest.calculadora.controller;
 
+import com.rest.calculadora.model.Calculadora;
 import com.rest.calculadora.service.CalculadoraService;
+import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,6 +14,11 @@ public class CalculadoraController {
 
     @Autowired
     private CalculadoraService service;
+
+    @GetMapping
+    public List<Calculadora> findAll() {
+        return service.findAll();
+    }
 
     @PostMapping("/somar")
     public double somar(@RequestParam double num1, @RequestParam double num2) {
