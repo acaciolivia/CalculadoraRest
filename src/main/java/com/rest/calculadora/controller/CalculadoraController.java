@@ -27,4 +27,9 @@ public class CalculadoraController {
     public double multiplicar(@RequestParam double num1, @RequestParam double num2) {
         return service.multiplicar(num1, num2);
     }
+
+    @PostMapping("/divir")
+    public double dividir(@RequestParam double num1, @RequestParam double num2) {
+        return service.divir(num1, num2);
+    }
 }

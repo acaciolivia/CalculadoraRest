@@ -40,6 +40,14 @@ public class CalculadoraService {
        return resultado;
    }
 
+   public double divir(double num1, double num2) {
+       if(num2 == 0) {
+           throw new IllegalArgumentException("Não é possível dividir por zero");
+       }
+       double resultado = num1 / num2;
+       return resultado;
+   }
+
    public void salvarResultado(double num1, double num2, TipoOperacao operacao, double resultado){
        Calculadora calc = new Calculadora();
 
