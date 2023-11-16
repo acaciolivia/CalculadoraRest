@@ -45,6 +45,8 @@ public class CalculadoraService {
            throw new IllegalArgumentException("Não é possível dividir por zero");
        }
        double resultado = num1 / num2;
+       salvarResultado(num1, num2, operacao.DIVISAO, resultado);
+
        return resultado;
    }
 

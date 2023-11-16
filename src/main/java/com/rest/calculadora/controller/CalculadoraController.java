@@ -2,7 +2,6 @@ package com.rest.calculadora.controller;
 
 import com.rest.calculadora.model.Calculadora;
 import com.rest.calculadora.service.CalculadoraService;
-import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
